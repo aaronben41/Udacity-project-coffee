@@ -75,7 +75,7 @@ def get_drinks_detail(payload):
 '''
 @app.route('/drinks', methods = ['POST'])
 @requires_auth('post:drinks')
-def create_new_drink():
+def create_new_drink(payload):
     body = request.get_json()
     title = body.get('title', None)
     recipe = body.get('recipe', None)
@@ -117,7 +117,7 @@ def create_new_drink():
 '''
 @app.route('/drinks/<int:drink_id>', methods = ['PATCH'])
 @requires_auth('patch:drinks')
-def edit_drink(drink_id):
+def edit_drink(payload, drink_id):
     body = request.get_json()
     title = body.get('title', None)
     recipe = request.args.get('recipe', None)
@@ -160,7 +160,7 @@ def edit_drink(drink_id):
 '''
 @app.route('/drinks/<int:drink_id>', methods = ['DELETE'])
 @requires_auth('delete:drinks')
-def delete_drink(drink_id):
+def delete_drink(payload, drink_id):
     try:
         drink = Drink.query.filter(Drink.id == drink_id).one_or_none()
         if not drink:
