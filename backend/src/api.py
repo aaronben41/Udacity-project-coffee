@@ -17,6 +17,7 @@ CORS(app)
 !! NOTE THIS MUST BE UNCOMMENTED ON FIRST RUN
 !! Running this funciton will add one
 '''
+#DONE
 db_drop_and_create_all()
 
 # ROUTES
@@ -28,11 +29,13 @@ db_drop_and_create_all()
     returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
         or appropriate status code indicating reason for failure
 '''
+#DONE
 @app.route('/drinks', methods = ['GET'])
 def get_drinks():
-    #function to get drinks
+    #function to get drinks, Does not require authentication and authorization
     try:
         drinks = [drink.short() for drink in Drink.query.order_by(Drink.id).all()]
+        
         return jsonify({
             'success': True,
             'drinks': drinks
@@ -50,6 +53,8 @@ def get_drinks():
     returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
         or appropriate status code indicating reason for failure
 '''
+#DONE
+#Function to get drinks detail. Requires permissions
 @app.route('/drinks-detail', methods = ['GET'])
 @requires_auth('get:drinks-detail')
 def get_drinks_detail(payload):
@@ -73,6 +78,8 @@ def get_drinks_detail(payload):
     returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the newly created drink
         or appropriate status code indicating reason for failure
 '''
+#DONE
+#function to post drinks. Only users with role 'Manager' can access this
 @app.route('/drinks', methods = ['POST'])
 @requires_auth('post:drinks')
 def create_new_drink(payload):
@@ -97,8 +104,8 @@ def create_new_drink(payload):
     except:
         db.session.rollback()
         raise AuthError({
-            'code': 'duplicate titles',
-            'description': 'do not use same titles'
+            'code': 'Duplicate Titles',
+            'description': 'Drink alredy exists. Duplicate titles are not allowed.'
         }, 422)
     finally:
         db.session.close()
@@ -190,7 +197,7 @@ def unprocessable(error):
     return jsonify({
         "success": False,
         "error": 422,
-        "message": "unprocessable"
+        "message": "Unprocessable"
     }), 422
 
 
@@ -217,7 +224,7 @@ def unprocessable(error):
     return jsonify({
         "success": False,
         "error": 500,
-        "message": "internal server error"
+        "message": "Internal Server Error"
     }), 500
 
 '''
@@ -229,7 +236,7 @@ def not_found(error):
     return jsonify({
         "success": False,
         "error": 404,
-        "message": "resource not found"
+        "message": "Resource Not Found"
     }), 404
 
 '''
