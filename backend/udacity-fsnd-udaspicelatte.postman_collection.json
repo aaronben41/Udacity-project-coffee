@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7ca6b57d-c1a6-44b0-bded-5cce79ac5931",
+		"_postman_id": "9751b251-9471-4950-aa42-c5a1f5f17985",
 		"name": "udacity-fsnd-udaspicelatte",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21420795"
@@ -558,7 +558,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZYNnBjT1BEaEd5SFY1Z210bjlyRCJ9.eyJpc3MiOiJodHRwczovL2Fhcm9uLWZzbmQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYyYzQ0OGVlMWViZDk4NTRiYTNkNTJiNCIsImF1ZCI6IkNvZmZlZVNob3AiLCJpYXQiOjE2NTcxOTI3NjMsImV4cCI6MTY1NzE5OTk2MywiYXpwIjoiZXc1RXYwQmk3TUVRbVU4ZjNsVlNWZGdGU3RNNVR6NnUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTpkcmlua3MiLCJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiLCJwYXRjaDpkcmlua3MiLCJwb3N0OmRyaW5rcyJdfQ.dSXqPeAGyjMku997gAhSs-Zyt2PF2c9OmP2K52QAkv7nU1jsbxN64BQWjRL6X1PEP6P45y8AuCE4-EVGBm7-zGCw6fDBeGMEE9RxERP095cywrEUDp29uEe8dMtu8dhav_PFZggAkm86QQ0EOF9dRKSmmtmF8vouL3bgPIb4VooKBu7e-6gEoCbZzfVf-o-USMMjM06fifNVlUgqNp3d0ReuN31Xif7YcBsgINrvf1L9Koa1hbM0ZEpAQRtSVnZd1bdnGSi8y2MrufE40vfNvZCSZ5n0Zncw2oW48BkfMBq-uLeUSdD-aRMfTbmWxb0xvyuQoBl5o3XFo8Hkc_TBxA",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZYNnBjT1BEaEd5SFY1Z210bjlyRCJ9.eyJpc3MiOiJodHRwczovL2Fhcm9uLWZzbmQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYyYzQ0OGVlMWViZDk4NTRiYTNkNTJiNCIsImF1ZCI6IkNvZmZlZVNob3AiLCJpYXQiOjE2NTcxOTU2NTksImV4cCI6MTY1NzIwMjg1OSwiYXpwIjoiZXc1RXYwQmk3TUVRbVU4ZjNsVlNWZGdGU3RNNVR6NnUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTpkcmlua3MiLCJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiLCJwYXRjaDpkcmlua3MiLCJwb3N0OmRyaW5rcyJdfQ.s9tgrRu59DEik4C-4J2AGVHxP_MmIRdPmhA6a3x5VKHZ59syXsqqcfvZJZir6gi5PoaEFnC_xAR_g7xgoupsqp5nOGyv1X8bZCrfzxpVBDRB_fMRTdTspiGpF08Pb_NdaAMcWDDX6xnJ2CkjGk5rJOjhCcwJMEZwXs1IwejQtT2y72nnxM4RLuMeNSXmYJiMCl_lGMlkQzxABG9ngQswBGIuidIMg8FN8YhAweQkx5Br80H6aGxU_zYKeiACozdSwf2NJjqZ9TzwLsiLisSwpYiqUBDmrzKBXf4fISnY2mmFscbGDG11TQHtefpLThzIYvTMkiTQ5Ubym5ZYe-0Ifg",
 						"type": "string"
 					}
 				]
